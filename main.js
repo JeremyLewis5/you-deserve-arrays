@@ -8,7 +8,7 @@
 // }
 
 function getFirstItemFrom(arr) {
-  return(arr[0])
+  return arr[0]
 }
 
 function getLastItemFrom(arr) {
@@ -21,21 +21,26 @@ function getIndex3(arr) {
 
 //Come back and get false test going
 function isLongList(arr) {
-  const boo1 = arr >= 10 === true;
-  const boo2 = arr < 10 === false;
-  return boo1 || boo2;
+  //const boo1 = arr >= 10 === true;
+  //const boo2 = arr < 10 === false;
+  return arr.length >= 10 ;
 }
 
 function firstItemIsNumber(arr) {
-  const arr1 = arr[0] === number;
-  const arr2 = arr[0] === string;
-  const true1 = arr1 === true
-  const false2 = arr2 === false
-  return true1 || true2;
+  // const arr1 = arr[0] === number;
+  // const arr2 = arr[0] === string;
+  // const true1 = arr1 === true
+  // const false2 = arr2 === false
+  // return true1 || true2;
+  //return arr.includes(number, 0)
+  const firstItem = arr[0];
+  return typeof firstItem === 'number';
 }
 
 function secondCharOfThirdString(arr) {
-  return arr[3]
+  //return arr.length(2, 3)
+  const thirdItem = arr[2];
+  return thirdItem[1];
 }
 
 
